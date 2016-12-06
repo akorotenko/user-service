@@ -1,0 +1,21 @@
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+      hibernate:
+        SQL: DEBUG
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/postgres
+    username: docker
+    password: docker
+  jpa:
+    database: postgresql
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+
+
